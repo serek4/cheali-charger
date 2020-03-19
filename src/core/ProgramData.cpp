@@ -189,6 +189,13 @@ uint16_t ProgramData::getMaxCells()
     return MAX_CHARGE_V / v;
 }
 
+uint16_t ProgramData::cellCount()
+{
+    if(battery.type == UnknownBatteryType || battery.type == LED)
+        return 1;
+    return battery.cells;
+}
+
 void ProgramData::check()
 {
     uint16_t v;

@@ -87,6 +87,7 @@ namespace ProgramData {
     inline int16_t getDeltaTLimit() {return battery.deltaT;}
 
     uint16_t getMaxCells();
+    uint16_t cellCount();
     uint16_t getMaxIc();
     uint16_t getMaxId();
 

@@ -53,14 +53,14 @@ namespace Screen { namespace Pages {
             {Screen::Methods::displayEnergy,        PAGE_ALWAYS, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance)},
 
             {Screen::Balancer::displayVoltage1_3,   PAGE_START_INFO + PAGE_BALANCE_PORT , PAGE_NONE},
-            {Screen::Balancer::displayVoltage4_6,   PAGE_START_INFO + PAGE_BALANCE_PORT , PAGE_NONE},
+            {Screen::Balancer::displayVoltage4_6,   PAGE_START_INFO + PAGE_BALANCE_PORT , PAGE_BELOW_4CELL},
 BALANCER_PORTS_GT_6(
-            {Screen::Balancer::displayVoltage7_9,   PAGE_START_INFO + PAGE_BALANCE_PORT , PAGE_NONE},)
+            {Screen::Balancer::displayVoltage7_9,   PAGE_START_INFO + PAGE_BALANCE_PORT , PAGE_BELOW_7CELL},)
 
             {Screen::Balancer::displayResistance1_3,PAGE_BALANCE_PORT, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance)},
-            {Screen::Balancer::displayResistance4_6,PAGE_BALANCE_PORT, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance)},
+            {Screen::Balancer::displayResistance4_6,PAGE_BALANCE_PORT, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance) + PAGE_BELOW_4CELL},
 BALANCER_PORTS_GT_6(
-            {Screen::Balancer::displayResistance7_9,PAGE_BALANCE_PORT, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance)},)
+            {Screen::Balancer::displayResistance7_9,PAGE_BALANCE_PORT, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance) + PAGE_BELOW_7CELL},)
 
             {Screen::Methods::displayR,             PAGE_ALWAYS, PAGE_START_INFO + PAGE_PROGRAM(Program::Balance)},
 
