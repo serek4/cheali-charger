@@ -30,7 +30,7 @@
 #define MAX_CHARGE_I            ANALOG_AMP(5.900)       //based on trashmaster9000 eeprom
 #define MAX_CHARGE_P            ANALOG_WATT(80.000)
 
-#define MAX_DISCHARGE_P         ANALOG_WATT(10.000)
+#define MAX_DISCHARGE_P         ANALOG_WATT(5.000)
 #define MAX_DISCHARGE_I         ANALOG_AMP(2.000)
 
 
