@@ -49,6 +49,10 @@ namespace Screen {
             c += PAGE_BALANCE_PORT;
         c += PAGE_BATTERY(ProgramData::getBatteryClass());
         c += PAGE_PROGRAM(Program::programType);
+        if(ProgramData::cellCount() < 4)
+            c += PAGE_BELOW_4CELL;
+        if(ProgramData::cellCount() < 7)
+            c += PAGE_BELOW_7CELL;
         return c;
     }
 

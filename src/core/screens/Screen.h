@@ -37,8 +37,12 @@
 
 #define PAGE_START_INFO             (1L<<30)
 #define PAGE_BALANCE_PORT           (1L<<29)
-#define PAGE_PROGRAM(program)       (1<<(program))
+#define PAGE_BELOW_7CELL            (1L<<28)
+#define PAGE_BELOW_4CELL            (1L<<27)
+// 6 battery classes
 #define PAGE_BATTERY(_class)        ((1<<9)<<(_class))
+// 11 program types
+#define PAGE_PROGRAM(program)       (1<<(program))
 
 namespace Screen {
 
